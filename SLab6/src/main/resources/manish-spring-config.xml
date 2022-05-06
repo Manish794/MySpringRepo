@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context/ 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="st1" class="com.manish.spring.to.Student">
+		<property name="sid" value="101" />
+		<property name="sname" value="Manish" />
+	</bean>
+	
+	<bean id="st2" class="com.manish.spring.to.Student">
+		<property name="sid" value="102" />
+		<property name="sname" value="Kumar" />
+	</bean>
+
+	<bean id="e1" class="com.manish.spring.to.Employee">
+		<property name="eid" value="1001" />
+		<property name="ename" value="Rahul" />
+	</bean>
+
+	<bean id="h" class="com.manish.spring.to.Hello"/>
+
+	<bean id="s1" class="com.manish.spring.to.Service"
+		autowire="byType" />
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

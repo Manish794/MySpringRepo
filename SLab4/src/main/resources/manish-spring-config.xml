@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context/ 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="st1" class="com.manish.spring.to.Student">
+		<property name="sid" value="101" />
+		<property name="sname" value="Manish" />
+	</bean>
+
+	<bean id="st2" class="com.manish.spring.to.Student">
+		<constructor-arg value="102" />
+		<constructor-arg value="Rahul" />
+	</bean>
+
+
+	<bean id="e1" class="com.manish.spring.to.Employee">
+		<property name="eid" value="1001" />
+		<property name="ename" value="Kumar" />
+	</bean>
+
+	<bean id="e2" class="com.manish.spring.to.Employee">
+		<constructor-arg value="1002" />
+		<constructor-arg value="Sohan" />
+	</bean>
+	<bean id="s1" class="com.manish.spring.to.Service"/>
+	<bean id="s2" class="com.manish.spring.to.Service">
+		<property name="stud" ref="st1" />
+	</bean>
+	<bean id="s3" class="com.manish.spring.to.Service">
+		<property name="emp" ref="e1" />
+	</bean>
+	<bean id="s4" class="com.manish.spring.to.Service">
+		<property name="stud" ref="st2" />
+		<property name="emp" ref="e2" />
+	</bean>
+	<bean id="s5" class="com.manish.spring.to.Service">
+		<constructor-arg ref="st2" />
+	</bean>
+	<bean id="s6" class="com.manish.spring.to.Service">
+		<constructor-arg ref="e1" />
+	</bean>
+	<bean id="s7" class="com.manish.spring.to.Service">
+		<constructor-arg index="0" ref="st1" />
+		<constructor-arg index="1" ref="e1" />
+	</bean>
+	<bean id="s8" class="com.manish.spring.to.Service">
+		<constructor-arg index="0" ref="e1" />
+		<constructor-arg index="1" ref="st1" />
+	</bean>
+	<bean id="s9" class="com.manish.spring.to.Service">
+		<constructor-arg ref="e1" />
+		<property name="stud" ref="st1" />
+	</bean>
+	<bean id="s10" class="com.manish.spring.to.Service">
+		<constructor-arg ref="st1" />
+		<property name="emp" ref="e1" />
+	</bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
