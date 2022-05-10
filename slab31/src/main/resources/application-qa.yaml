@@ -1,0 +1,18 @@
+app-name: slab31
+server:
+ port: 8084
+ servlet.context-path: /${app-name}-qa
+
+db:
+ url: mysql-qa
+ username: root-qa
+ password: Aadi@123-qa
+ use-mysql: use-mysql-qa
+
+myserver:
+ ip:
+ - 11.1.1.1
+ - 22.2.2.2
+ - 33.3.3.3
+
+testapp: hai

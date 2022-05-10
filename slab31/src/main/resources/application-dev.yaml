@@ -1,0 +1,18 @@
+app-name: slab31
+server:
+ port: 8082
+ servlet.context-path: /${app-name}-dev
+
+db:
+ url: mysql-dev
+ username: root-dev
+ password: Aadi@123-dev
+ use-mysql: use-mysql-dev
+
+myserver:
+ ip:
+ - 11.1.1.1
+ - 22.2.2.2
+ - 33.3.3.3
+
+testapp: hello

@@ -1,0 +1,18 @@
+app-name: slab31
+server:
+ port: 8083
+ servlet.context-path: /${app-name}-prod
+
+db:
+ url: mysql-prod
+ username: root-prod
+ password: Aadi@123-prod
+ use-mysql: use-mysql-prod
+
+myserver:
+ ip:
+ - 11.1.1.11
+ - 22.2.2.22
+ - 33.3.3.33
+
+testapp: hai
